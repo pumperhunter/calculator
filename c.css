@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    background: #111;
+  }
+  
+  body {
+    display: grid;
+    align-content: center;
+    min-height: 96vh;
+  }
+  
+  .calc {
+    display: block;
+    width: 300px;
+    background: #2f2f2f;
+    padding: 10px;
+    font-size: 0;
+    border: 2px outset #222;
+    border-radius: 4px;
+    box-shadow: 3px 3px 0px 3px #222, 0px 5px 15px black;
+    margin: 20px auto;
+  }
+  
+  .calc * {
+    font-family: 'Courier', monospace;
+  }
+  
+  .calc p {
+    margin: 0;
+    display: block;
+    width: 100%;
+  }
+  
+  .calc input {
+    font-size: 16px;
+    -webkit-appearance: none;
+    appearance: none;
+    font-weight: bold;
+    padding: 4px;
+  }
+  
+  .calc input:focus {
+    outline: 1px solid #888;
+  }
+  
+  .calc input[type="button"], .calc input[type="reset"] {
+    width: calc(25% - 10px);
+    margin: 5px;
+    color: white;
+    background: #555;
+    border: 2px outset #333;
+    cursor: pointer;
+  }
+  
+  .calc input.alt {
+    color: #eee;
+    background: #404040;
+    border: 2px outset #333;
+  }
+  
+  .calc input[type="button"]:hover, .calc input[type="reset"]:hover {
+    background: #4f4f4f;
+  }
+  .calc input[type="button"]:active, .calc input[type="reset"]:active {
+    border: 2px inset #333;
+    color: #ddd;
+    background: #404040;
+  }
+  
+  .calc input.submit {
+    background: darkgreen;
+    border-color: darkgreen
+  }
+  .calc input.submit:hover {
+    background: green;
+  }
+  .calc input[type="reset"] {
+    background: maroon;
+    border-color: maroon;
+  }
+  .calc input[type="reset"]:hover {
+    background: darkred;
+  }
+  
+  .calc input[type="textfield"] {
+    width: calc(75% - 10px);
+    border: 2px inset #222;
+    background: #54722b;
+    color: #b2df6a;
+    margin: 5px;
+  }
